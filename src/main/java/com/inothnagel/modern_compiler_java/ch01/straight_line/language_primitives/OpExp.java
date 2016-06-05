@@ -1,8 +1,5 @@
-package com.inothnagel.modern_compiler_java.ch01.straight_line;
+package com.inothnagel.modern_compiler_java.ch01.straight_line.language_primitives;
 
-/**
- * Created by inothnagel on 2016/06/05.
- */
 public class OpExp extends Exp {
     public Exp left, right;
     public int oper;
@@ -12,5 +9,17 @@ public class OpExp extends Exp {
         this.left = left;
         this.right = right;
         this.oper = oper;
+    }
+
+    public int getOper(){
+        return oper;
+    }
+
+    public Exp getLeft() {
+        return left;
+    }
+
+    public Exp getRight() {
+        return right;
     }
 }

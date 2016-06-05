@@ -1,8 +1,5 @@
-package com.inothnagel.modern_compiler_java.ch01.straight_line;
+package com.inothnagel.modern_compiler_java.ch01.straight_line.language_primitives;
 
-/**
- * Created by inothnagel on 2016/06/05.
- */
 public class NumExp extends Exp {
     public int num;
 
@@ -12,5 +9,9 @@ public class NumExp extends Exp {
 
     public String toString() {
         return Integer.toString(num);
+    }
+
+    public int getNum() {
+        return num;
     }
 }

@@ -1,8 +1,5 @@
-package com.inothnagel.modern_compiler_java.ch01.straight_line;
+package com.inothnagel.modern_compiler_java.ch01.straight_line.language_primitives;
 
-/**
- * Created by inothnagel on 2016/06/05.
- */
 public class PairExpList extends ExpList {
     public Exp head;
     public ExpList tail;

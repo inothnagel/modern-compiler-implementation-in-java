@@ -1,8 +1,5 @@
-package com.inothnagel.modern_compiler_java.ch01.straight_line;
+package com.inothnagel.modern_compiler_java.ch01.straight_line.language_primitives;
 
-/**
- * Created by inothnagel on 2016/06/05.
- */
 public class IdExp extends Exp {
     public String id;
 
@@ -11,6 +8,10 @@ public class IdExp extends Exp {
     }
 
     public String toString() {
+        return id;
+    }
+
+    public String getId() {
         return id;
     }
 }

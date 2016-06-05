@@ -1,8 +1,5 @@
-package com.inothnagel.modern_compiler_java.ch01.straight_line;
+package com.inothnagel.modern_compiler_java.ch01.straight_line.language_primitives;
 
-/**
- * Created by inothnagel on 2016/06/05.
- */
 public class CompoundStm extends Stm {
     public Stm stm1, stm2;
 
@@ -13,6 +10,14 @@ public class CompoundStm extends Stm {
 
     public String toString() {
         return stm1.toString() + "; " + stm2.toString();
+    }
+
+    public Stm getStm1() {
+        return stm1;
+    }
+
+    public Stm getStm2() {
+        return stm2;
     }
 }
 

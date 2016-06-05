@@ -1,5 +1,9 @@
 package com.inothnagel.modern_compiler_java.ch01.straight_line;
 
+import com.inothnagel.modern_compiler_java.ch01.straight_line.interpreter.Environment;
+import com.inothnagel.modern_compiler_java.ch01.straight_line.interpreter.StmInterpreter;
+import com.inothnagel.modern_compiler_java.ch01.straight_line.language_primitives.*;
+
 /**
  * Created by inothnagel on 2016/06/05.
  */
@@ -17,6 +21,7 @@ public class Main {
 
         System.out.println(prog);
 
-        new Interpreter().interpret(prog);
+        Environment env = new Environment();
+        new StmInterpreter(env, prog).interpret();
     }
 }
