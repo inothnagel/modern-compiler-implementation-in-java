@@ -11,12 +11,17 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Hello Interpreter.");
 
-        // a := 5
-        // print a
-
         Stm prog = new CompoundStm(
                 new AssignStm("a", new NumExp(5)),
-                new PrintStm(new LastExpList(new IdExp("a")))
+                new PrintStm(
+                        new LastExpList(
+                                new OpExp(
+                                    new IdExp("a"), OpExp.Plus, new OpExp(
+                                        new IdExp("a"), OpExp.Plus, new NumExp(7)
+                                    )
+                                )
+                        )
+                )
         );
 
         System.out.println(prog);

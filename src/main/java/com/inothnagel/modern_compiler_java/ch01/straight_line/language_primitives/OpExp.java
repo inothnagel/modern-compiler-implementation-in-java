@@ -22,4 +22,16 @@ public class OpExp extends Exp {
     public Exp getRight() {
         return right;
     }
+
+    public String toString() {
+        String operString = getOperString();
+        return left.toString() + " " + operString + " " + right.toString();
+    }
+
+    public String getOperString() {
+        switch (oper) {
+            case Plus: return "+";
+        }
+        return null;
+    }
 }

@@ -26,13 +26,15 @@ public class PrintStmInterpreter {
     }
 
     private String printExp(Exp e) {
-        if (e instanceof NumExp) {
-            NumExp ne = (NumExp) e;
+        Exp resolvedExp = new ExpInterpreter(env, e).interpret();
+
+        if (resolvedExp instanceof NumExp) {
+            NumExp ne = (NumExp) resolvedExp;
             return Integer.toString(ne.getNum());
         }
 
-        if (e instanceof IdExp) {
-            IdExp ie = (IdExp) e;
+        if (resolvedExp instanceof IdExp) {
+            IdExp ie = (IdExp) resolvedExp;
             String key = ie.getId();
             String val = printExp(env.get(ie.getId()));
             System.out.println("Found value " + val + " for key " + key + " in environment.");

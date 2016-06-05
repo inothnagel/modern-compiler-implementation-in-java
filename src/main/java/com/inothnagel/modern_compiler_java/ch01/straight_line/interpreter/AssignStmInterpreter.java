@@ -15,7 +15,7 @@ public class AssignStmInterpreter {
     public void interpret() {
         System.out.println("Interpreting AssignStm: " + s);
         String key = s.getId();
-        Exp val = s.getExp();
+        Exp val = new ExpInterpreter(env, s.getExp()).interpret();
         System.out.println("Setting value " + val + " for key " + key + " in environment.");
         env.put(key, val);
     }
