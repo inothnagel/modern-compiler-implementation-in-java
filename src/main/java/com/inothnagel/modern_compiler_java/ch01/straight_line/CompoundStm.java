@@ -6,9 +6,13 @@ package com.inothnagel.modern_compiler_java.ch01.straight_line;
 public class CompoundStm extends Stm {
     public Stm stm1, stm2;
 
-    public CompoundStm(Stm stm2, Stm stm1) {
+    public CompoundStm(Stm stm1, Stm stm2) {
         this.stm2 = stm2;
         this.stm1 = stm1;
+    }
+
+    public String toString() {
+        return stm1.toString() + "; " + stm2.toString();
     }
 }
 

@@ -9,4 +9,8 @@ public class LastExpList extends ExpList {
     public LastExpList(Exp head) {
         this.head = head;
     }
+
+    public String toString() {
+        return head.toString();
+    }
 }

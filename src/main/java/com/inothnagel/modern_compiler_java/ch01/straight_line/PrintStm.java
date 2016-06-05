@@ -9,4 +9,8 @@ public class PrintStm extends Stm {
     public PrintStm(ExpList exps) {
         this.exps = exps;
     }
+
+    public String toString() {
+        return "print " + exps.toString();
+    }
 }

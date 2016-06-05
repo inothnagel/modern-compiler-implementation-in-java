@@ -15,6 +15,8 @@ public class Main {
                 new PrintStm(new LastExpList(new IdExp("a")))
         );
 
+        System.out.println(prog);
+
         new Interpreter().interpret(prog);
     }
 }

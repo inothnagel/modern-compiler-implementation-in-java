@@ -9,4 +9,8 @@ public class NumExp extends Exp {
     public NumExp(int num) {
         this.num = num;
     }
+
+    public String toString() {
+        return Integer.toString(num);
+    }
 }

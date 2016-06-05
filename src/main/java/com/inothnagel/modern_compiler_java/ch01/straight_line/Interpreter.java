@@ -6,7 +6,7 @@ package com.inothnagel.modern_compiler_java.ch01.straight_line;
 public class Interpreter {
 
     public void interpret(Stm s) {
-        System.out.println(s);
+
     }
 
 }

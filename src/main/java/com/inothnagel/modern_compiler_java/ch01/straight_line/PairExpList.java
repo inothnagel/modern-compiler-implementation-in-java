@@ -11,4 +11,8 @@ public class PairExpList extends ExpList {
         this.head = head;
         this.tail = tail;
     }
+
+    public String toString() {
+        return head.toString() + ", " + tail.toString();
+    }
 }

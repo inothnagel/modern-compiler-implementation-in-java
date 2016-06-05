@@ -11,4 +11,8 @@ public class AssignStm extends Stm {
         this.id = id;
         this.exp = exp;
     }
+
+    public String toString() {
+        return id + " := " + exp.toString();
+    }
 }
